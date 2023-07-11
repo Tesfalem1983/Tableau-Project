@@ -1,0 +1,2715 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0611.2007                               -->
+<workbook original-version='18.1' source-build='2023.2.0 (20232.23.0611.2007)' source-platform='win' version='18.1' xml:base='https://vizhub' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://public.tableau.com/workbooks/TableauProject-R?rev=1.3' id='TableauProject-R' path='/workbooks' revision='1.4' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='20220327 annual-number-of-deaths-by-cause' inline='true' name='federated.17khudi06n5jhr138vtu80mpz5q8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='20220327 annual-number-of-deaths-by-cause' name='textscan.0hpxf400ou48441g31c8r0bhkxgd'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/simon/OneDrive - Mohawk College of Applied Arts and Technology/Data Science Boot camp (Lighthouse &amp; Mohawk Collge)/Week 6/W06- Week end- Tableau Project/20220327 annual-number-of-deaths-by-cause.csv' dataRefreshTime='' directory='C:/Users/simon/OneDrive - Mohawk College of Applied Arts and Technology/Data Science Boot camp (Lighthouse &amp; Mohawk Collge)/Week 6/W06- Week end- Tableau Project' filename='C:/Users/simon/AppData/Local/Temp/TableauTemp/0c3j97i0gqq8zp19roh4b0vol73n/20220327 annual-number-of-deaths-by-cause.csv.xlsx' interpretationMode='8' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0hpxf400ou48441g31c8r0bhkxgd' name='20220327 annual-number-of-deaths-by-cause.csv' table='[20220327 annual-number-of#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:AK8255:no:A1:AK8255:1' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='Entity' ordinal='0' />
+            <column datatype='string' name='Code' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='integer' name='Executions' ordinal='3' />
+            <column datatype='integer' name='Meningitis' ordinal='4' />
+            <column datatype='integer' name='Neoplasms' ordinal='5' />
+            <column datatype='integer' name='Fire, heat, and hot substances' ordinal='6' />
+            <column datatype='integer' name='Malaria' ordinal='7' />
+            <column datatype='integer' name='Drowning' ordinal='8' />
+            <column datatype='integer' name='Interpersonal violence' ordinal='9' />
+            <column datatype='integer' name='HIV/AIDS' ordinal='10' />
+            <column datatype='integer' name='Drug use disorders' ordinal='11' />
+            <column datatype='integer' name='Tuberculosis' ordinal='12' />
+            <column datatype='integer' name='Road injuries' ordinal='13' />
+            <column datatype='integer' name='Maternal disorders' ordinal='14' />
+            <column datatype='integer' name='Lower respiratory infections' ordinal='15' />
+            <column datatype='integer' name='Neonatal disorders' ordinal='16' />
+            <column datatype='integer' name='Alcohol use disorders' ordinal='17' />
+            <column datatype='integer' name='Exposure to forces of nature' ordinal='18' />
+            <column datatype='integer' name='Diarrheal diseases' ordinal='19' />
+            <column datatype='integer' name='Environmental heat and cold exposure' ordinal='20' />
+            <column datatype='integer' name='Nutritional deficiencies' ordinal='21' />
+            <column datatype='integer' name='Self-harm' ordinal='22' />
+            <column datatype='integer' name='Conflict and terrorism' ordinal='23' />
+            <column datatype='integer' name='Diabetes mellitus' ordinal='24' />
+            <column datatype='integer' name='Poisonings' ordinal='25' />
+            <column datatype='integer' name='Protein-energy malnutrition' ordinal='26' />
+            <column datatype='integer' name='Terrorism' ordinal='27' />
+            <column datatype='integer' name='Cardiovascular diseases' ordinal='28' />
+            <column datatype='integer' name='Chronic kidney disease' ordinal='29' />
+            <column datatype='integer' name='Chronic respiratory diseases' ordinal='30' />
+            <column datatype='integer' name='Cirrhosis and other chronic liver diseases' ordinal='31' />
+            <column datatype='integer' name='Digestive diseases' ordinal='32' />
+            <column datatype='integer' name='Acute hepatitis' ordinal='33' />
+            <column datatype='integer' name='Alzheimer&apos;s disease and other dementias' ordinal='34' />
+            <column datatype='integer' name='Parkinson&apos;s disease' ordinal='35' />
+            <column datatype='integer' name='Total Deaths' ordinal='36' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0hpxf400ou48441g31c8r0bhkxgd' name='20220327 annual-number-of-deaths-by-cause.csv' table='[20220327 annual-number-of#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:AK8255:no:A1:AK8255:1' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='Entity' ordinal='0' />
+            <column datatype='string' name='Code' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='integer' name='Executions' ordinal='3' />
+            <column datatype='integer' name='Meningitis' ordinal='4' />
+            <column datatype='integer' name='Neoplasms' ordinal='5' />
+            <column datatype='integer' name='Fire, heat, and hot substances' ordinal='6' />
+            <column datatype='integer' name='Malaria' ordinal='7' />
+            <column datatype='integer' name='Drowning' ordinal='8' />
+            <column datatype='integer' name='Interpersonal violence' ordinal='9' />
+            <column datatype='integer' name='HIV/AIDS' ordinal='10' />
+            <column datatype='integer' name='Drug use disorders' ordinal='11' />
+            <column datatype='integer' name='Tuberculosis' ordinal='12' />
+            <column datatype='integer' name='Road injuries' ordinal='13' />
+            <column datatype='integer' name='Maternal disorders' ordinal='14' />
+            <column datatype='integer' name='Lower respiratory infections' ordinal='15' />
+            <column datatype='integer' name='Neonatal disorders' ordinal='16' />
+            <column datatype='integer' name='Alcohol use disorders' ordinal='17' />
+            <column datatype='integer' name='Exposure to forces of nature' ordinal='18' />
+            <column datatype='integer' name='Diarrheal diseases' ordinal='19' />
+            <column datatype='integer' name='Environmental heat and cold exposure' ordinal='20' />
+            <column datatype='integer' name='Nutritional deficiencies' ordinal='21' />
+            <column datatype='integer' name='Self-harm' ordinal='22' />
+            <column datatype='integer' name='Conflict and terrorism' ordinal='23' />
+            <column datatype='integer' name='Diabetes mellitus' ordinal='24' />
+            <column datatype='integer' name='Poisonings' ordinal='25' />
+            <column datatype='integer' name='Protein-energy malnutrition' ordinal='26' />
+            <column datatype='integer' name='Terrorism' ordinal='27' />
+            <column datatype='integer' name='Cardiovascular diseases' ordinal='28' />
+            <column datatype='integer' name='Chronic kidney disease' ordinal='29' />
+            <column datatype='integer' name='Chronic respiratory diseases' ordinal='30' />
+            <column datatype='integer' name='Cirrhosis and other chronic liver diseases' ordinal='31' />
+            <column datatype='integer' name='Digestive diseases' ordinal='32' />
+            <column datatype='integer' name='Acute hepatitis' ordinal='33' />
+            <column datatype='integer' name='Alzheimer&apos;s disease and other dementias' ordinal='34' />
+            <column datatype='integer' name='Parkinson&apos;s disease' ordinal='35' />
+            <column datatype='integer' name='Total Deaths' ordinal='36' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AK8255:no:A1:AK8255:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>288890</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Entity</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Entity]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Entity</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Code]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Executions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Executions]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Executions</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Meningitis</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Meningitis]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Meningitis</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Neoplasms</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Neoplasms]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Neoplasms</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fire, heat, and hot substances</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fire, heat, and hot substances]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Fire, heat, and hot substances</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Malaria</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Malaria]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Malaria</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Drowning</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Drowning]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Drowning</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interpersonal violence</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Interpersonal violence]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Interpersonal violence</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HIV/AIDS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HIV/AIDS]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>HIV/AIDS</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Drug use disorders</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Drug use disorders]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Drug use disorders</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tuberculosis</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tuberculosis]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Tuberculosis</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Road injuries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Road injuries]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Road injuries</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Maternal disorders</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Maternal disorders]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Maternal disorders</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lower respiratory infections</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lower respiratory infections]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Lower respiratory infections</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Neonatal disorders</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Neonatal disorders]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Neonatal disorders</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alcohol use disorders</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Alcohol use disorders]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Alcohol use disorders</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exposure to forces of nature</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Exposure to forces of nature]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Exposure to forces of nature</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diarrheal diseases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Diarrheal diseases]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Diarrheal diseases</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Environmental heat and cold exposure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Environmental heat and cold exposure]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Environmental heat and cold exposure</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nutritional deficiencies</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Nutritional deficiencies]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Nutritional deficiencies</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Self-harm</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Self-harm]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Self-harm</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Conflict and terrorism</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Conflict and terrorism]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Conflict and terrorism</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diabetes mellitus</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Diabetes mellitus]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Diabetes mellitus</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Poisonings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Poisonings]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Poisonings</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Protein-energy malnutrition</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Protein-energy malnutrition]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Protein-energy malnutrition</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Terrorism</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Terrorism]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Terrorism</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cardiovascular diseases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cardiovascular diseases]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Cardiovascular diseases</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Chronic kidney disease</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Chronic kidney disease]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Chronic kidney disease</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Chronic respiratory diseases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Chronic respiratory diseases]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Chronic respiratory diseases</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cirrhosis and other chronic liver diseases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cirrhosis and other chronic liver diseases]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Cirrhosis and other chronic liver diseases</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Digestive diseases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Digestive diseases]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Digestive diseases</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Acute hepatitis</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Acute hepatitis]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Acute hepatitis</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alzheimer&apos;s disease and other dementias</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Alzheimer&apos;s disease and other dementias]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Alzheimer&apos;s disease and other dementias</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Parkinson&apos;s disease</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Parkinson&apos;s disease]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Parkinson&apos;s disease</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Deaths]</local-name>
+            <parent-name>[20220327 annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Total Deaths</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Continents' datatype='string' name='[Calculation_1346576334622617600]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Entity]= &apos;Africa&apos; OR [Entity]=&apos;Asia&apos; OR [Entity]= &apos;Europe&apos; OR [Entity] =&apos;North America&apos; OR [Entity] = &apos;Oceania&apos; OR [Entity] = &apos;Australia&apos; OR [Entity] = &apos;Latin America &amp; Caribbean - World Bank region&apos;&#13;&#10;THEN[Entity]&#13;&#10;END' />
+      </column>
+      <column caption='World Deaths' datatype='integer' name='[Calculation_1346576334624837633]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Entity] = &quot;World&quot; THEN [Total Deaths] &#13;&#10;END' />
+      </column>
+      <column caption='Hiv/Aids' datatype='integer' name='[HIV/AIDS]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='20220327 annual-number-of-deaths-by-cause.csv' datatype='table' name='[__tableau_internal_object_id__].[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_1346576334622617600]' derivation='None' name='[none:Calculation_1346576334622617600:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/simon/AppData/Local/Temp/TableauTemp/#TableauTemp_0g4kpcz1pvt3aj1frqksi1mqbspx.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/10/2023 02:09:43 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Entity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Entity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Entity</remote-alias>
+              <ordinal>0</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>322</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Code</remote-alias>
+              <ordinal>1</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>237</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Executions</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Executions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Executions</remote-alias>
+              <ordinal>3</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>47</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Meningitis</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Meningitis]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Meningitis</remote-alias>
+              <ordinal>4</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1751</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Neoplasms</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Neoplasms]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Neoplasms</remote-alias>
+              <ordinal>5</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3665</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fire, heat, and hot substances</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Fire, heat, and hot substances]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fire, heat, and hot substances</remote-alias>
+              <ordinal>6</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1611</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Malaria</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Malaria]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Malaria</remote-alias>
+              <ordinal>7</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1535</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Drowning</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Drowning]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Drowning</remote-alias>
+              <ordinal>8</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1847</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Interpersonal violence</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Interpersonal violence]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Interpersonal violence</remote-alias>
+              <ordinal>9</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2014</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HIV/AIDS</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[HIV/AIDS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HIV/AIDS</remote-alias>
+              <ordinal>10</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1932</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Drug use disorders</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Drug use disorders]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Drug use disorders</remote-alias>
+              <ordinal>11</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1125</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tuberculosis</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Tuberculosis]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tuberculosis</remote-alias>
+              <ordinal>12</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2253</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Road injuries</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Road injuries]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Road injuries</remote-alias>
+              <ordinal>13</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2792</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Maternal disorders</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Maternal disorders]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Maternal disorders</remote-alias>
+              <ordinal>14</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1721</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lower respiratory infections</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Lower respiratory infections]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lower respiratory infections</remote-alias>
+              <ordinal>15</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3043</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Neonatal disorders</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Neonatal disorders]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Neonatal disorders</remote-alias>
+              <ordinal>16</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2700</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Alcohol use disorders</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Alcohol use disorders]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Alcohol use disorders</remote-alias>
+              <ordinal>17</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1498</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Exposure to forces of nature</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Exposure to forces of nature]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Exposure to forces of nature</remote-alias>
+              <ordinal>18</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>749</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Diarrheal diseases</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Diarrheal diseases]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Diarrheal diseases</remote-alias>
+              <ordinal>19</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2215</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Environmental heat and cold exposure</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Environmental heat and cold exposure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Environmental heat and cold exposure</remote-alias>
+              <ordinal>20</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1018</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nutritional deficiencies</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Nutritional deficiencies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nutritional deficiencies</remote-alias>
+              <ordinal>21</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1936</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Self-harm</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Self-harm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Self-harm</remote-alias>
+              <ordinal>22</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2399</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Conflict and terrorism</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Conflict and terrorism]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Conflict and terrorism</remote-alias>
+              <ordinal>23</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1010</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Diabetes mellitus</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Diabetes mellitus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Diabetes mellitus</remote-alias>
+              <ordinal>24</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2733</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Poisonings</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Poisonings]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Poisonings</remote-alias>
+              <ordinal>25</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1390</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Protein-energy malnutrition</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Protein-energy malnutrition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Protein-energy malnutrition</remote-alias>
+              <ordinal>26</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1786</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Terrorism</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Terrorism]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Terrorism</remote-alias>
+              <ordinal>27</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>306</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cardiovascular diseases</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Cardiovascular diseases]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cardiovascular diseases</remote-alias>
+              <ordinal>28</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4079</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Chronic kidney disease</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Chronic kidney disease]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Chronic kidney disease</remote-alias>
+              <ordinal>29</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2531</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Chronic respiratory diseases</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Chronic respiratory diseases]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Chronic respiratory diseases</remote-alias>
+              <ordinal>30</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2981</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cirrhosis and other chronic liver diseases</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Cirrhosis and other chronic liver diseases]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cirrhosis and other chronic liver diseases</remote-alias>
+              <ordinal>31</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2750</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Digestive diseases</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Digestive diseases]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Digestive diseases</remote-alias>
+              <ordinal>32</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3073</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Acute hepatitis</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Acute hepatitis]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Acute hepatitis</remote-alias>
+              <ordinal>33</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1198</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Alzheimer&apos;s disease and other dementias</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Alzheimer&apos;s disease and other dementias]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Alzheimer&apos;s disease and other dementias</remote-alias>
+              <ordinal>34</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2594</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Parkinson&apos;s disease</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Parkinson&apos;s disease]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Parkinson&apos;s disease</remote-alias>
+              <ordinal>35</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1814</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Deaths</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Deaths]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Deaths</remote-alias>
+              <ordinal>36</ordinal>
+              <family>20220327 annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4837</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_1346576334622617600:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Africa&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Latin America &amp; Caribbean - World Bank region&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Europe&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Oceania&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;North America&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Asia&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>%null%</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='20220327 annual-number-of-deaths-by-cause.csv' id='20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F'>
+            <properties context=''>
+              <relation connection='textscan.0hpxf400ou48441g31c8r0bhkxgd' name='20220327 annual-number-of-deaths-by-cause.csv' table='[20220327 annual-number-of#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:AK8255:no:A1:AK8255:1' header='yes' locale='en_CA' separator=','>
+                  <column datatype='string' name='Entity' ordinal='0' />
+                  <column datatype='string' name='Code' ordinal='1' />
+                  <column datatype='integer' name='Year' ordinal='2' />
+                  <column datatype='integer' name='Executions' ordinal='3' />
+                  <column datatype='integer' name='Meningitis' ordinal='4' />
+                  <column datatype='integer' name='Neoplasms' ordinal='5' />
+                  <column datatype='integer' name='Fire, heat, and hot substances' ordinal='6' />
+                  <column datatype='integer' name='Malaria' ordinal='7' />
+                  <column datatype='integer' name='Drowning' ordinal='8' />
+                  <column datatype='integer' name='Interpersonal violence' ordinal='9' />
+                  <column datatype='integer' name='HIV/AIDS' ordinal='10' />
+                  <column datatype='integer' name='Drug use disorders' ordinal='11' />
+                  <column datatype='integer' name='Tuberculosis' ordinal='12' />
+                  <column datatype='integer' name='Road injuries' ordinal='13' />
+                  <column datatype='integer' name='Maternal disorders' ordinal='14' />
+                  <column datatype='integer' name='Lower respiratory infections' ordinal='15' />
+                  <column datatype='integer' name='Neonatal disorders' ordinal='16' />
+                  <column datatype='integer' name='Alcohol use disorders' ordinal='17' />
+                  <column datatype='integer' name='Exposure to forces of nature' ordinal='18' />
+                  <column datatype='integer' name='Diarrheal diseases' ordinal='19' />
+                  <column datatype='integer' name='Environmental heat and cold exposure' ordinal='20' />
+                  <column datatype='integer' name='Nutritional deficiencies' ordinal='21' />
+                  <column datatype='integer' name='Self-harm' ordinal='22' />
+                  <column datatype='integer' name='Conflict and terrorism' ordinal='23' />
+                  <column datatype='integer' name='Diabetes mellitus' ordinal='24' />
+                  <column datatype='integer' name='Poisonings' ordinal='25' />
+                  <column datatype='integer' name='Protein-energy malnutrition' ordinal='26' />
+                  <column datatype='integer' name='Terrorism' ordinal='27' />
+                  <column datatype='integer' name='Cardiovascular diseases' ordinal='28' />
+                  <column datatype='integer' name='Chronic kidney disease' ordinal='29' />
+                  <column datatype='integer' name='Chronic respiratory diseases' ordinal='30' />
+                  <column datatype='integer' name='Cirrhosis and other chronic liver diseases' ordinal='31' />
+                  <column datatype='integer' name='Digestive diseases' ordinal='32' />
+                  <column datatype='integer' name='Acute hepatitis' ordinal='33' />
+                  <column datatype='integer' name='Alzheimer&apos;s disease and other dementias' ordinal='34' />
+                  <column datatype='integer' name='Parkinson&apos;s disease' ordinal='35' />
+                  <column datatype='integer' name='Total Deaths' ordinal='36' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Death by Causes'>
+      <repository-location id='DeathbyCauses' path='/workbooks/TableauProject-R' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20220327 annual-number-of-deaths-by-cause' name='federated.17khudi06n5jhr138vtu80mpz5q8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17khudi06n5jhr138vtu80mpz5q8'>
+            <column datatype='integer' name='[Acute hepatitis]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Alcohol use disorders]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Alzheimer&apos;s disease and other dementias]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Cardiovascular diseases]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Chronic kidney disease]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Chronic respiratory diseases]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Cirrhosis and other chronic liver diseases]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Conflict and terrorism]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Diabetes mellitus]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Diarrheal diseases]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Digestive diseases]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Drowning]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Drug use disorders]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Environmental heat and cold exposure]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Executions]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Exposure to forces of nature]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Fire, heat, and hot substances]' role='measure' type='quantitative' />
+            <column caption='Hiv/Aids' datatype='integer' name='[HIV/AIDS]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Interpersonal violence]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Lower respiratory infections]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Malaria]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Maternal disorders]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Meningitis]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Neonatal disorders]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Neoplasms]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Nutritional deficiencies]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Parkinson&apos;s disease]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Poisonings]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Protein-energy malnutrition]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Road injuries]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Self-harm]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Terrorism]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Tuberculosis]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='20220327 annual-number-of-deaths-by-cause.csv' datatype='integer' name='[__tableau_internal_object_id__].[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='20220327 annual-number-of-deaths-by-cause.csv' datatype='table' name='[__tableau_internal_object_id__].[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Acute hepatitis]' derivation='Sum' name='[sum:Acute hepatitis:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Alcohol use disorders]' derivation='Sum' name='[sum:Alcohol use disorders:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Alzheimer&apos;s disease and other dementias]' derivation='Sum' name='[sum:Alzheimer&apos;s disease and other dementias:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cardiovascular diseases]' derivation='Sum' name='[sum:Cardiovascular diseases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Chronic kidney disease]' derivation='Sum' name='[sum:Chronic kidney disease:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Chronic respiratory diseases]' derivation='Sum' name='[sum:Chronic respiratory diseases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cirrhosis and other chronic liver diseases]' derivation='Sum' name='[sum:Cirrhosis and other chronic liver diseases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Conflict and terrorism]' derivation='Sum' name='[sum:Conflict and terrorism:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Diabetes mellitus]' derivation='Sum' name='[sum:Diabetes mellitus:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Diarrheal diseases]' derivation='Sum' name='[sum:Diarrheal diseases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Digestive diseases]' derivation='Sum' name='[sum:Digestive diseases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Drowning]' derivation='Sum' name='[sum:Drowning:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Drug use disorders]' derivation='Sum' name='[sum:Drug use disorders:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Environmental heat and cold exposure]' derivation='Sum' name='[sum:Environmental heat and cold exposure:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Executions]' derivation='Sum' name='[sum:Executions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Exposure to forces of nature]' derivation='Sum' name='[sum:Exposure to forces of nature:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Fire, heat, and hot substances]' derivation='Sum' name='[sum:Fire, heat, and hot substances:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[HIV/AIDS]' derivation='Sum' name='[sum:HIV/AIDS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Interpersonal violence]' derivation='Sum' name='[sum:Interpersonal violence:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Lower respiratory infections]' derivation='Sum' name='[sum:Lower respiratory infections:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Malaria]' derivation='Sum' name='[sum:Malaria:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Maternal disorders]' derivation='Sum' name='[sum:Maternal disorders:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Meningitis]' derivation='Sum' name='[sum:Meningitis:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Neonatal disorders]' derivation='Sum' name='[sum:Neonatal disorders:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Neoplasms]' derivation='Sum' name='[sum:Neoplasms:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Nutritional deficiencies]' derivation='Sum' name='[sum:Nutritional deficiencies:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Parkinson&apos;s disease]' derivation='Sum' name='[sum:Parkinson&apos;s disease:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Poisonings]' derivation='Sum' name='[sum:Poisonings:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Protein-energy malnutrition]' derivation='Sum' name='[sum:Protein-energy malnutrition:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Road injuries]' derivation='Sum' name='[sum:Road injuries:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Self-harm]' derivation='Sum' name='[sum:Self-harm:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Terrorism]' derivation='Sum' name='[sum:Terrorism:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Tuberculosis]' derivation='Sum' name='[sum:Tuberculosis:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Acute hepatitis:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Alcohol use disorders:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Alzheimer&apos;s disease and other dementias:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Cardiovascular diseases:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Chronic kidney disease:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Chronic respiratory diseases:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Cirrhosis and other chronic liver diseases:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Conflict and terrorism:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[__tableau_internal_object_id__].[cnt:20220327 annual-number-of-deaths-by-cause.csv_B08868E8E3D646C195F4050341B5751F:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Diabetes mellitus:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Diarrheal diseases:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Digestive diseases:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Drowning:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Drug use disorders:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Environmental heat and cold exposure:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Executions:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Exposure to forces of nature:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Fire, heat, and hot substances:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:HIV/AIDS:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Interpersonal violence:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Lower respiratory infections:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Malaria:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Maternal disorders:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Meningitis:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Neonatal disorders:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Neoplasms:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Nutritional deficiencies:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Parkinson&apos;s disease:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Poisonings:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Protein-energy malnutrition:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Road injuries:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Self-harm:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Terrorism:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Tuberculosis:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Acute hepatitis:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Alcohol use disorders:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Alzheimer&apos;s disease and other dementias:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Cardiovascular diseases:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Chronic kidney disease:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Chronic respiratory diseases:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Cirrhosis and other chronic liver diseases:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Conflict and terrorism:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Diabetes mellitus:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='10' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Diarrheal diseases:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='11' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Digestive diseases:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='12' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Drowning:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='13' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Drug use disorders:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='14' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Environmental heat and cold exposure:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='15' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Executions:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='16' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Exposure to forces of nature:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='17' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Fire, heat, and hot substances:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='18' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:HIV/AIDS:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='19' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Interpersonal violence:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='20' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Lower respiratory infections:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='21' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Malaria:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='22' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Maternal disorders:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='23' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Meningitis:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='24' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Neonatal disorders:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='25' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Neoplasms:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='26' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Nutritional deficiencies:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='27' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Parkinson&apos;s disease:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='28' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Poisonings:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='29' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Protein-energy malnutrition:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='30' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Road injuries:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='31' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Self-harm:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='32' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Terrorism:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='33' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Tuberculosis:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Acute hepatitis:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Alcohol use disorders:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Alzheimer&apos;s disease and other dementias:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Cardiovascular diseases:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Chronic kidney disease:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Chronic respiratory diseases:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Cirrhosis and other chronic liver diseases:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Conflict and terrorism:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Diabetes mellitus:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Diarrheal diseases:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Digestive diseases:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Drowning:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Drug use disorders:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Environmental heat and cold exposure:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Executions:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Exposure to forces of nature:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Fire, heat, and hot substances:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:HIV/AIDS:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Interpersonal violence:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Lower respiratory infections:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Malaria:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Maternal disorders:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Meningitis:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Neonatal disorders:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Neoplasms:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Nutritional deficiencies:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Parkinson&apos;s disease:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Poisonings:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Protein-energy malnutrition:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Road injuries:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Self-harm:qk] + ([federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Terrorism:qk] + [federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Tuberculosis:qk]))))))))))))))))))))))))))))))))</rows>
+        <cols>[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{228D7C1B-959B-4230-B818-466FE0CDAC90}' />
+    </worksheet>
+    <worksheet name='Death by SDI Level'>
+      <repository-location id='DeathbySDILevel' path='/workbooks/TableauProject-R' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20220327 annual-number-of-deaths-by-cause' name='federated.17khudi06n5jhr138vtu80mpz5q8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17khudi06n5jhr138vtu80mpz5q8'>
+            <column datatype='string' name='[Entity]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Deaths]' role='measure' type='quantitative' />
+            <column-instance column='[Entity]' derivation='None' name='[none:Entity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Deaths]' derivation='Sum' name='[sum:Total Deaths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Entity:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Entity:nk]' member='&quot;High SDI&quot;' />
+              <groupfilter function='member' level='[none:Entity:nk]' member='&quot;High-middle SDI&quot;' />
+              <groupfilter function='member' level='[none:Entity:nk]' member='&quot;Low SDI&quot;' />
+              <groupfilter function='member' level='[none:Entity:nk]' member='&quot;Low-middle SDI&quot;' />
+              <groupfilter function='member' level='[none:Entity:nk]' member='&quot;Middle SDI&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Entity:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Total Deaths:qk]' palette='sunrise_sunset_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Total Deaths:qk]' />
+              <color column='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Total Deaths:qk]' />
+              <text column='[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Entity:nk]' />
+              <text column='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Total Deaths:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B145FDEB-095F-4A1C-88B1-1012045E80F8}' />
+    </worksheet>
+    <worksheet name='Death by WB Income Level'>
+      <repository-location id='DeathbyWBIncomeLevel' path='/workbooks/TableauProject-R' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20220327 annual-number-of-deaths-by-cause' name='federated.17khudi06n5jhr138vtu80mpz5q8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17khudi06n5jhr138vtu80mpz5q8'>
+            <column datatype='string' name='[Entity]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Deaths]' role='measure' type='quantitative' />
+            <column-instance column='[Entity]' derivation='None' name='[none:Entity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Deaths]' derivation='Sum' name='[sum:Total Deaths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Entity:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Entity:nk]' member='&quot;World Bank High Income&quot;' />
+              <groupfilter function='member' level='[none:Entity:nk]' member='&quot;World Bank Low Income&quot;' />
+              <groupfilter function='member' level='[none:Entity:nk]' member='&quot;World Bank Lower Middle Income&quot;' />
+              <groupfilter function='member' level='[none:Entity:nk]' member='&quot;World Bank Upper Middle Income&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Entity:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Total Deaths:qk]' />
+              <text column='[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Entity:nk]' />
+              <text column='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Total Deaths:qk]' />
+              <color column='[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Entity:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D84BCD37-75CE-4076-B554-8F0D07C5ACF4}' />
+    </worksheet>
+    <worksheet name='Deaths by Continents'>
+      <repository-location id='DeathsbyContinents' path='/workbooks/TableauProject-R' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20220327 annual-number-of-deaths-by-cause' name='federated.17khudi06n5jhr138vtu80mpz5q8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17khudi06n5jhr138vtu80mpz5q8'>
+            <column caption='Continents' datatype='string' name='[Calculation_1346576334622617600]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Entity]= &apos;Africa&apos; OR [Entity]=&apos;Asia&apos; OR [Entity]= &apos;Europe&apos; OR [Entity] =&apos;North America&apos; OR [Entity] = &apos;Oceania&apos; OR [Entity] = &apos;Australia&apos; OR [Entity] = &apos;Latin America &amp; Caribbean - World Bank region&apos;&#13;&#10;THEN[Entity]&#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[Entity]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Deaths]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1346576334622617600]' derivation='None' name='[none:Calculation_1346576334622617600:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Deaths]' derivation='Sum' name='[sum:Total Deaths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Calculation_1346576334622617600:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_1346576334622617600:nk]' />
+              <groupfilter function='member' level='[none:Calculation_1346576334622617600:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Calculation_1346576334622617600:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Total Deaths:qk]' value='34' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Calculation_1346576334622617600:nk]' value='48' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Total Deaths:qk]' palette='red_green_gold_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Total Deaths:qk]' />
+              <text column='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Total Deaths:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Calculation_1346576334622617600:nk]</rows>
+        <cols>[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Total Deaths:qk]</cols>
+      </table>
+      <simple-id uuid='{1B11D66A-D1B4-46DC-B41E-B2EAED949E60}' />
+    </worksheet>
+    <worksheet name='Top 5 Causes of World Deaths by Continents'>
+      <repository-location id='Top5CausesofWorldDeathsbyContinents' path='/workbooks/TableauProject-R' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20220327 annual-number-of-deaths-by-cause' name='federated.17khudi06n5jhr138vtu80mpz5q8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17khudi06n5jhr138vtu80mpz5q8'>
+            <column caption='Continents' datatype='string' name='[Calculation_1346576334622617600]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Entity]= &apos;Africa&apos; OR [Entity]=&apos;Asia&apos; OR [Entity]= &apos;Europe&apos; OR [Entity] =&apos;North America&apos; OR [Entity] = &apos;Oceania&apos; OR [Entity] = &apos;Australia&apos; OR [Entity] = &apos;Latin America &amp; Caribbean - World Bank region&apos;&#13;&#10;THEN[Entity]&#13;&#10;END' />
+            </column>
+            <column datatype='integer' name='[Cardiovascular diseases]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Chronic respiratory diseases]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Digestive diseases]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Entity]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Lower respiratory infections]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Neoplasms]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1346576334622617600]' derivation='None' name='[none:Calculation_1346576334622617600:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cardiovascular diseases]' derivation='Sum' name='[sum:Cardiovascular diseases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Chronic respiratory diseases]' derivation='Sum' name='[sum:Chronic respiratory diseases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Digestive diseases]' derivation='Sum' name='[sum:Digestive diseases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Lower respiratory infections]' derivation='Sum' name='[sum:Lower respiratory infections:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Neoplasms]' derivation='Sum' name='[sum:Neoplasms:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Chronic respiratory diseases:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Digestive diseases:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Lower respiratory infections:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Neoplasms:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Calculation_1346576334622617600:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_1346576334622617600:nk]' />
+              <groupfilter function='member' level='[none:Calculation_1346576334622617600:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]</column>
+            <column>[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Calculation_1346576334622617600:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.17khudi06n5jhr138vtu80mpz5q8].[Multiple Values]' value='39' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]' value='99' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Cardiovascular diseases:qk]' />
+              <color column='[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Calculation_1346576334622617600:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17khudi06n5jhr138vtu80mpz5q8].[:Measure Names]</rows>
+        <cols>[federated.17khudi06n5jhr138vtu80mpz5q8].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{014CA9CC-933B-4859-B46A-3FA9E4B80E51}' />
+    </worksheet>
+    <worksheet name='World Death by Year'>
+      <repository-location id='WorldDeathbyYear' path='/workbooks/TableauProject-R' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20220327 annual-number-of-deaths-by-cause' name='federated.17khudi06n5jhr138vtu80mpz5q8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17khudi06n5jhr138vtu80mpz5q8'>
+            <column caption='World Deaths' datatype='integer' name='[Calculation_1346576334624837633]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Entity] = &quot;World&quot; THEN [Total Deaths] &#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[Entity]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Deaths]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1346576334624837633]' derivation='Sum' name='[sum:Calculation_1346576334624837633:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Calculation_1346576334624837633:qk]</rows>
+        <cols>[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{AF93E063-49D2-4A81-969E-B4C58A1EDAF2}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='World Death Causes -Dashboard'>
+      <repository-location id='WorldDeathCauses-Dashboard' path='/workbooks/TableauProject-R' revision='' />
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='90312' id='7' param='horz' type-v2='layout-flow' w='97538' x='1231' y='8339'>
+            <zone h='90312' id='5' type-v2='layout-basic' w='48769' x='1231' y='8339'>
+              <zone h='45155' id='3' name='Death by SDI Level' w='48769' x='1231' y='8339'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='45157' id='20' name='Death by WB Income Level' w='48769' x='1231' y='53494'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='317' h='90312' id='18' is-fixed='true' type-v2='layout-basic' w='48769' x='50000' y='8339'>
+              <zone h='35394' id='6' param='vert' type-v2='layout-flow' w='48769' x='50000' y='8339'>
+                <zone fixed-size='258' h='35394' id='13' is-fixed='true' name='Deaths by Continents' w='48769' x='50000' y='8339'>
+                  <layout-cache minwidth='220' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='54918' id='19' param='vert' type-v2='layout-flow' w='48769' x='50000' y='43733'>
+                <zone h='54918' id='12' name='World Death by Year' w='48769' x='50000' y='43733'>
+                  <layout-cache minheight='198' minwidth='163' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='6990' id='17' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1349'>
+            <zone fixed-size='62' h='6990' id='8' is-fixed='true' name='Death by SDI Level' pane-specification-id='0' param='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Total Deaths:qk]' type-v2='color' w='10769' x='1231' y='1349'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='6990' id='21' name='Death by WB Income Level' pane-specification-id='0' param='[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Entity:nk]' type-v2='color' w='75077' x='12000' y='1349'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='27' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97302' id='26' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1349'>
+                <zone fixed-size='280' h='45155' id='3' is-fixed='true' name='Death by SDI Level' w='48769' x='1231' y='8339'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='62' h='6990' id='8' name='Death by SDI Level' pane-specification-id='0' param='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Total Deaths:qk]' type-v2='color' w='10769' x='1231' y='1349'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='35394' id='13' is-fixed='true' name='Deaths by Continents' w='48769' x='50000' y='8339'>
+                  <layout-cache minwidth='220' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54918' id='12' is-fixed='true' name='World Death by Year' w='48769' x='50000' y='43733'>
+                  <layout-cache minheight='198' minwidth='163' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45157' id='20' is-fixed='true' name='Death by WB Income Level' w='48769' x='1231' y='53494'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6990' id='21' name='Death by WB Income Level' pane-specification-id='0' param='[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Entity:nk]' type-v2='color' w='75077' x='12000' y='1349'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5F4F3CA3-297B-4713-8EE1-065F9BCD0C96}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='World Death by Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Calculation_1346576334622617600:nk]</field>
+            <field>[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6A942B4E-0404-49EA-A84F-EB093934B484}' />
+    </window>
+    <window class='worksheet' name='Death by Causes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BCB322FE-026D-4F2B-B884-B3162B442EC5}' />
+    </window>
+    <window class='worksheet' name='Deaths by Continents'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Total Deaths:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Calculation_1346576334622617600:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E2B1B28F-3884-4702-AD2D-34626CA7070F}' />
+    </window>
+    <window class='worksheet' name='Death by SDI Level'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.17khudi06n5jhr138vtu80mpz5q8].[sum:Total Deaths:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Entity:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D0FFC99A-E660-4C6C-8C81-8FFB73F6D0B8}' />
+    </window>
+    <window class='worksheet' name='Death by WB Income Level'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Entity:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Calculation_1346576334622617600:nk]</field>
+            <field>[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Entity:nk]</field>
+            <field>[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{905D0105-0AA9-4957-9137-637A44FDC720}' />
+    </window>
+    <window class='worksheet' name='Top 5 Causes of World Deaths by Continents'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Calculation_1346576334622617600:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Calculation_1346576334622617600:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C4B043E6-1558-4DA7-90F3-77AAD746180C}' />
+    </window>
+    <window class='dashboard' maximized='true' name='World Death Causes -Dashboard'>
+      <viewpoints>
+        <viewpoint name='Death by SDI Level' />
+        <viewpoint name='Death by WB Income Level'>
+          <highlight>
+            <color-one-way>
+              <field>[federated.17khudi06n5jhr138vtu80mpz5q8].[none:Entity:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Deaths by Continents' />
+        <viewpoint name='World Death by Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{ACB3D689-0823-4A4E-A92E-434A65BBB87F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='World Death Causes -Dashboard' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nO29d3BdWXrg97vh5ZyQM0ACIJhTd5PsbnaY6elJPUHSjkal1dqrrVLt2uWy
+      q2xV2WXXVNn+x7It7265rHVJ3tXuzEo7QdL0hM7dZDM3A8hmQI4PwAPw8HJ+7wb/ARJNNEGC
+      AQAD7q+KRbx77/nOefed755wvyDouq5jYLBJER93AwwMHieGAhhsagwFMNjUyI+7AWtFsawQ
+      TxeWHQt4bFhMj/8r6oUkejG17JjgbUIQhMfUoi9Q4nH0Unnps2A2IQcCj7FFX7CQz8FtS1Sb
+      yYTDbFnTOjasdyjlAuHwNFa3n9qQf83l941H+dG/O77s2P/6x6+yrdlPLl9EUco4XW4KhQJu
+      l2vpGlWtkC9VcNntZDIZXC4XU+EJVF2isbEe8bZOqus6uXwOp8MJQCaXwypLlDUBh+3uP0y5
+      98eUz/3FsmPO/+oy5VIZFZlsJoXP56VUUXHYrEvX5HNZZKsNkyiSzeWw26xMjI9jc3morQot
+      k6frKrl8CafDjqaqFMplHDbbqvct9n//P5SuX1/6bO5op+Z/+Z/JpFM4nC5isThOhw3JYsMs
+      fTFhyGTSOJwutEqJsiYiqGWmI7MEqqrxuV3L6iiVCgiSCbMsU8znkaxWTOLqk48/P3kMRdOW
+      Pr/Y0sY3u3pIpZJYLRaKZRVRAKfTsfQw0XWdQqGA3W6nXC4jyzLpdJp4PE5jYyMmk2lZHdKP
+      fvSjH936oJYLfPD3/5FzQwtsbW9BlgRSkWHiqguXVQLg2qmPoaqV4TO/4WTvAIk8NNUGlwld
+      mOwjJ/s4d/Ikra3NACTC1zg/kqWpLkg6Nkc8W+LM+79GdweYnhjj+Ecf4vEHEUxmCrkcVquV
+      B2E2luXY5Yllx17b20rALfHRpye5cPIjsFkZHp1G0stUdJFCOs7MbJjPR6ewaBXe//hTdm7v
+      4Z1jnzAzPoQnWMVMeAqHy8H4yChlTaX36mXcDhc2m42PTp/GSZHewQmUSoViNkk8k8frdi9r
+      hxr+DHX6wrJj5uf/hGx6jnNX+vjVL/4Wp89FKlshFYtislpYmJuj9/xZ5Jpa5kaHOX/5Gg1V
+      Ic5c/Zz+q5epratlZmYes0lkYmwcyaxz8XI/LqcdXVW5NDhIY1WIkZFhJLMVq8W84n3LfXoC
+      NRr9okP4/ThffZXL50+SV3L85U9+hayk8YaqCE9OYbWYiURmOXX+NDV19Vw7d5xIwUI6PELK
+      LHHx3Dl8LgeJTB61nCccnmFhfopsRcMkyozeuI7i92NVywyPjOHyeJGllZXh45EhtNtGgGav
+      j63BKo4de59YYp6zvf1E5ybweTzMLSSwmE3E43GGhoZwOp1cvHiRUCjE8PAwqqqSSCTIZDKI
+      okg6nSYWiy0fASSzje3d3cxam7hw/LdE4kWcUoo5cw/bHFE+uhzh6I5a/DpUFI1Dr32d0+/9
+      nL/t/ZB5zcehTj+/PTPCC+0SiUARYXZ5h5yfniDa6ufqucsIJgGromK3mei/PIWiaZgpcOzD
+      D7D763nt8J679fUHQjbZUfJRQk0tnD9xku27d3Gpb5xM+iKVxBRHv/YN0skol5IJZHlRyVOx
+      GFbZTCQ8zKWLF6ifaiYXF7G6BCKTY6iaja++HGB6bITczDhWfzUj/REKqp2smqSl4Qf31TaX
+      p4aZ0bfp2rGD06cv0bW1BavDz9nzJyhVzGxpCHLt0lmCnmoEFp9wczPTuGxurl4+z4VLV+je
+      sZWQv4bRyATHPzhOfdN/Sb1v8Sk3dP08U0mVc5/f4A++/50Hum+dW1r5f//DP7Cnp535osrx
+      D96joaGBE6c/IFTdhSiKnDh5jFrn4iijozE5Oo7N4eL0qWOMTc+xdWsjbruXgqpy5cNT/PM/
+      /mdL8j9+/zdUN7Ty8anzvHn0hQdqW5XPzZXhafxeC4rg5Z1338Vjt3HFW83eLa3ous6NGzew
+      3RwBi8Ui8XiclpYWzp8/j81mw+PxIMvy3RfBuXwREwrVja04bBZGJqexiyqVm+fVSpFLZ45j
+      99dSVCS2dbYzMj6FU9Jp7OjAajZjdX0xMpisTjxOK4qi0dTaRnNjHV2dLYSnFwiGQrTWh0hp
+      LiqpWbq2dT3QDVmNhlAtjVt24fV56ensRsnFCAYC7Nl/iNpQiNrqWorZFLq42HECPi82q4Wy
+      ohKqrsXpcLNr5w4a6+vZd/AFTEIBVYede/dz9OWjhIIBqmrryabmiS3EGRsbY3Z2mnxZuWe7
+      RMmEx+7j4KGX8Hi9bGtvJTI5RktLO4eeP0xNTQ2NtXVMjIxgdbiRZBmv043VakYQJGpravD4
+      q9i+bTshf4BvfusbzEUmkCSJ6ZEhknmFhblp6uvrGZ0IEw6Pcb+vfTxVrQSCPg7v6sZq8dLS
+      UMvE1AxdnT08v38v1aEqAl4fE1NzuOxWnG4PNpMJk0nCarVTFQpR39BKd1c3wUCIr7x0gJlo
+      FLvLQe/JkzhcHkbGxqmtCTI5Nc3UzNR9/56trVtxeXw0+Dw0Nm+hKuihoEJz0EMg6EaXbQiC
+      QCKRQJIkHA4Huq6jaRput5tgMEhzczMNDQ0IX34RpqkKGiJoFUoVDbvVTK5QwiSCoguYTRKS
+      bEatlCiWKtgdDtRykYoGsgiKCjabmXyhhNlkwmw23e173EGlmKF/JML2bVt50PXhQipP72Bk
+      2bH9XXX4XKvPg9cCTStz4vhJqhpa6N7StuycOncDdb5v2THT9u8iCI9/E67Qexk1kVj6LLrd
+      2Pfve4wt+oILU5Not/XOGpeLJq9vTeu4QwEMDDYTj/8RZGDwGDEUwGBTYyiAwabGUACDTY2h
+      AAabGkMBDDY1hgIYbGoMBTDY1BgKYLCpMRTAYFNzhwIsTI9y/PhxrvSNLDNFXZVygt7r4186
+      qNDbe3WVgjqzk0OcOHmahVSeciHN6RPHOXXuIoWyCkB0eprSzbYo5Qyz86l7CVyRzPwYw1PJ
+      By73pKApRc6dPM7J0+dI58urF7iNa7293KtEMT1H3/DMqnLSsRlOnjhJJJZ+oPqfZO5QgP5r
+      vTRvO4BfSvP375xA10HXNFRNW/xb11FVFU3T0HWdD95+m5yqoit5wjMxVFW9zeJQJRyeQVNV
+      NF1Hv/kPuFkeSgujnLg+z4F9O4lF58kujJPSfezqbOQXP/0Z+YrK1RMnuNXlC5kpLlweW2qv
+      rmuoqrZk7Xerjbf+3WpPMRsjmsqv9/1cNyqlJOEFhX07O3n/lz9jPlte9v1g8fvfuhcLo72c
+      /HwCTdOITC2am9/6zXRNW/Y7VUppZqPJpWP6zevQ9aWHYDY6yjsnb7D/wD5QSov3W1XRNB0d
+      bt7/W/2iwttv/wZVVVFLOUYmppd+n6U6lq5fbLuuaUufdU3j7bffXrpWu9Xf1uG+rugRJkky
+      jVv38PmNn5NKzPLeByfxOiWCbQdotOe5OjpFbG6ew0eP0jcwgO72cmBHE+MDn3NCTjGfqfB7
+      334DgMTcBCc+Pc70fIpXDrZxcRK+8eJWfv6LD/jd3/k2otVJdnaUiblWOtqaSU1fRRQlnN4q
+      jnQHuTZx96e9Ukjxy1+/j8tlwV7VTXLsMq985/vM9R4jFdjO1KVPsLncYK9hV9063L0NRhRF
+      bE4vrxzq4fL1McypAYqinXRR5ztff5FTH52kpBYxB1owRfu5tmDCZxcppBc4+emnzI9N8rUf
+      /B7HfvG3BOqaae7aSVvdovvj8I1e1PQoZXMVntIUtfveIJDr48ycj6891861i5d4/pXvYrVK
+      1FptXD79IdNpnXwqySvf/A6/+cm/oXlrD6OT83z7jecYGOjHEwhwsLuRG6MRhIV+To2XqLXn
+      EQO7aZAi9EcLlNJpvvrWm/z8r35M+7ZOpiIxXj2yh4GBAdy+GtqCGmcGU1R7PRx6+XlWdut5
+      hHt691OLWhru66UgOZAtTm5c66VQyFGpqJRySXKag+6uLl48+hI+u4nWzp0cfeVVbMIXA66/
+      ppmXX3mVzjoHqruD8mw/w72f0bTrOQQBTM5q/ugf/4BKbJyf/er9ZS1QNQ3pLt5CAAvT/cRy
+      IJkcDNy4zJG9rZy7Eub6TI4t/iwT01kEyczwwHW0u0p5+tBUDVEscr0vjCgIRCZGyeby5Eol
+      BFFmKhyms7ubHXsO0tPRiM0d5MWjR9nVUktG0amuDpDL5xFvc0vs2LaX19/4Jlo6wr7Dh7hw
+      5iyneid4cV8rAJIo3nxaLzIRzfH1r32FN55r5+pQBH9tMy8ffYUmnx1HdQNdXd28fPh5bKZb
+      du0Se54/wutvvkxuLsrFqzdwmCSkUoqBcJSqxnaOHj1KjceMt7aNrq4ujr54EJ+/CrNeoqLp
+      LLONXiPu7F2aRiK+wMCVz5B8LTS3thDwBdixvYdDz+3j6o1htu/Yjtux6AMrCRVmpmcpVVbu
+      YqV8lrnINBNzWXxuGwd6GvhPnw6xp33Rp7UQj3Clf5xgbQOituhAks0kmZkc5dJkgZ5G9x0y
+      c5kUCwsLWN3V1FSH2LF9Gy8dfg5v6x7SA+9j9TVjtQRoaKpm+/btHH3p8DOx2i/k0szOTHKq
+      d5zdPV00t9SxdVsPr712FGVuiIq7iZb6agQBZIuF+NwMyXT2S1JKBGq2sG/nVi6ev3TzmEA6
+      GWNy+Dqa1Y/FVYOPORK6E7u8eOe27d3H+Y8/YHZ2lompWTxmjYHRMJeuj9PaEPxSHSJaOUdk
+      fgHlLp22pamJutat7Dv0Eh01njvOV4o5ZucXKCgie/YfQMpMMJ14sLXP/XCHP0BqIcL4dBSn
+      L0hrYy2iIBCLhJmJZWjbshVZyTI0HqGmugqH24uk5hkaCdPS0UqpqOL3OonH4/j9fkBjbirM
+      fDJLU2sHHoeFYnyE35yL8v03nwcW5/AzE6MkcgptWzow6yUGBodBttGxpR2LLJFaWMAeCGAS
+      BNRKnv4bQyiINHdshUKccCROc3sHbruFhUgYW6ABh1kgl1xgNDxLXXMrbrNOUTPjsq/1ILox
+      aGqZgRt9qKKZ1o4OHBYTlWKOoeFR3KE66qt8jA8NILuCOKwmfF434bFhBHsAl1nA7fdTSCWR
+      nG6y81NE4jk6tnZiM4molRKT42MUNBNbOloxSSJXjv0aqeNFtjd80TlzqQVGJ2epb27D65AZ
+      GRzCEaynNuQlEY/j8/tJxeO4/H5K6Rhj0wtsaW8hW6hgl1Q0kxO7RSMeL+Lz2hgdHESzuGhv
+      qSOZyOD3e0km4ri8fgrJecYiKbq3NjE6NITJFaK1oXrN7+vGOsRU8nx6+jy7Dh7GY3v84UoM
+      Via9MM2VkXkOH9y9LCrGs4jhEWawqXkWpsYGBg+NoQAGmxpDAQw2NSuuRHMjYXKj9x+n5UlC
+      EMC/J4hWTKx+8VrVaXHzWcSCqq7d24bnepoxPwFxTZ91VrzDM7/4kNE///cb3ZY1QZBEjvzN
+      KyjTn21YnVLVTv77n9eQLZTWTOZ7/9efEPAYCrDeGFMgg02NoQAGm5pVFaD2e6+BKNDwB9/E
+      5HMjmk0IZhO2ploAHB1NuLZ3LCvj3rmV6m+8hGNLM3W/81U8+7ZhbahGvEuE4vVidDZHRdW4
+      PJokEi8uWT+Go3nyJXXFMul8hWxx0SRjYDqz9P/l0fszpa4PeZAlka7mKoJex9Jxv9uO2/Fg
+      Ea8N1p9VJ5miScbR3oTktGEOeCHoxb2rk9JMFPeOLYhmE6VoAu9zO3Bv72Dqx79GMMlo5Qpa
+      uULsxEXs7Y2Y3A4q8Qe3438U5pIlLo8lyZdUNB2m4wWuT6bprHdxZiBOR62T+oCVC8NJYpky
+      DovEtiY3ogDXJ9PYLTLDkRzRVInmKjvXJ9OcuBHj+y/UEfKsnA/A7bDS01qD026hf3wOn8tO
+      Z3MVk7MJmqp9jEdiXBud3dD78KRxyxxavI8cAY9SRtO0Va9fVVpudIrAi3vJDU0iOWxYaoLk
+      R6YQZBklk6OSWjS2srfUU0llESSJ8nwcJZPD3lyLvaUe2WlDVzf+hbPdKvHNA7XU+62k8hUy
+      BQW/y4yq6by5r4Z8WSWRrVDjtbCt0cXuNi/JXIW5ZInGoB2zafH2VN3s7KOzOdx2+Z6OQoqq
+      cezSMFPzKVx266J9UjKLSZY4c218I772U4GmPdiO2S1/ggdBVVce5W9n1REgfXWY7OAEuqKi
+      qxpoGtbGGrIDY5j8HrRiGTVfIHW5D0t1ELVYopLOIZjiFKfnsbfUkboyAJqGVrl3uPC1Zmud
+      E5MkcGCLHwS4Op7i0kiW//z1ZuwWib1tXmxmkUJ58cZKokCtz4IkCoQXCmypc5IvKeg6eBwm
+      ZFFgIprH57z7VG5iNk5FUbk6suhh1Vzj44WOFt4+eZ1kJr+mO0VPM9rACZTUnSOh4Aoi7fjK
+      hrVjVQXQiiW04vIfLT8SBkDNF5cfzy4eV1IZlNTi/Dk7ML4W7XwobObFhBfOm4Z3L3QFeKHr
+      i/xXdou07P9FFp/6HbWLaZC8juXh3Tvrl6f/+TLlyuJTp1BazKTQPzFP/8T80nl1lZwBmwWt
+      /1P08Yt3HBfqujZUAVadAjm7WrHWhTAFPDjaG0EUcW1rR7j5ksZSE8Te3ohgkrHcTJXk2dON
+      tb4KAMluxbW9A0GScPW0IzltOLY0Yala+zxhXyZfUrk0kiSdr3B+KEEiWyZfUlHXcTomSyLb
+      WmuwW830tNbgc9kwydJd0wAZPF5WWSEIqLkCnn09ePdvxxz0EnhxL4JJxr1zKwCSw4a9qRZr
+      XRWOtkYkpx3JbqWSWHSc9r2wi/JCAte2NnRNRxBFdE3HtWPLun+50/0xrGaR2UQRWRI4MxBn
+      dDZHvrz63PBh2b2lnnJFweu0YpIltrfVUhd043EaO0BPIvdWAE3H5HWhForkR8I4OpowBzzk
+      hiYQbj7RBFEkPzFDYWIGNV9EV1RMfjfe/T0AmH0e/Ef24mhvxLmlCWdXKyavi/TlgXX/ci90
+      +hmJ5EjkKgRcZnxOE5U1NFdYiSvDM9QG3PjddlK5AgupHBaz8Ub3QZmfn+fEiRMUCgXeeecd
+      RkZGeO+99zh9+jS6rpNMJvn0008pl8t88MEHDA4OEovFiN5M+JdIJIhEIoyMjPDb3/6WiYkJ
+      Tp8+TTweX1bPPRVANJuw1lWBriNaTJQTaWLHL1L1tSOUowmcXa24etoXO/etv9saQNOppLK4
+      etrJ9I2gFUokL91A13S0soKjrRFHR+P63b2bTETzKJqO2yZzbjCBrkPIY0GW1s/JoybgwmyS
+      yBUrdDVV47RZiCayS2uDZ5XPPnmPWElnpP9zJmdjAGRTCe7iKbsqhUIBSZLo7e2ls7OT5uZm
+      jhw5QrG4uO48d+4cTqeT8+fPEwwGaW1t5eLFiwwNDQEQj8eZmpqiqamJtrY2BgcHsdlsnDt3
+      blmetHs+mrRyhfn3Ti19zlwfASDydx8imk0gCmT7vwhRcuvvzI0REEUkuxU1m18qV5hcXPWn
+      L/c/3F15QLY1utl206e4ewXf4vUgPJckPLf40mxsJrYhdT5utGIMZ30Hs6PjLMzMUKOrHB+Z
+      pMppRnZESGY1/KYiH58Z4B/90Q9wyauvh1RVxel0UlNTwyeffML09DSBQIDOzk4EQcDlcjE4
+      OEh3dzfDw8OMj48zNTWF0+nk0KFDNDc3E41GkWWZubk5jh49uiTndh56bNbKlVUu0FCzjzcO
+      j6JqFCsadotERdExywIVdfGFilkW0YFcUcVqElE1HUkS0DQdVQObWUQQBAplFVkU0HQQAEkS
+      KJZV7Bbpicj0/iQQmZ6nkC9Trug0t3dR7TPjrQlSnBtFlQRAJ1fS6Gquo6xr3I8FzsDAAPl8
+      HlmWkSSJ2tpaisUidXV1nD9/HqfTiSiKWCwWBEGgvb2dN998k4mJCS5evEipVOLGjRu0tLTQ
+      3Ny8lED7hRdeWPa7PdOT0/BCgctjKVqq7IzN5XltV4iPP49SUTS+f6ie8EKB80MJ9rV7uTCc
+      wGGVqfNbuRHO8K0DNZQVjWPXFtjf4ePC0KJ5dU+Ti/7pLPvavTSF7I/5Gz4Z1Ld3U/+lYzYA
+      32K627YvnbsfL9w333xz6e9t27ah3QzsBdDZ2Ynb7Wbnzp0AdHV9kVa3o6ODYrGIw+HgwIED
+      yzLDv/XWW3fU80wrQJXHQrmiEXSbsVkkNE2nzm9FEAQUVUMSF5/qM/EiO1s8xDJlgm4zogAm
+      SWR8Pg86TEbzNIZs6DpUe60k8wrV3pVNIQzWF0EQcLvvPp29lRf4fnmmFWBsPo8sCcynynw+
+      nqKt2k6moFJRNQJOEyZZRJIEzCaRqxNpfE4TY3N5BGHxjW/IY2E4kkXXYTZRRBQEFtIlFE0n
+      U3BgMUmrN8LgieaZVoDtTW62Ny0+Lfa1e5edm1ooUB+wLk1jDm5ZnoB5Jl6gymPhey98eXA3
+      eJZ4phXgXjQE751Bvs6/MRnmNyvya3+CqN65kSKYNtZkftMqgMFjxhlAlB9/9zMMVAw2NY9f
+      BQ02JddnhkgW7j/RxmK6grs7uHTXdlDlDqx47l4YCmDwWPjXH/41nwycXTN5/+qH/xPf2PXq
+      A5czpkAGmxpDAQw2NYYCGDz1aCWFTCpDPp8nnU6j6zqlUmnJJ7hUKpFOp1EUhUQigaZpxONx
+      CoWCsQYwWGt0Rvqv4K7pIuRddAJKJRK4fL51e9pWUkV+8w+/Qg1nkWWZV155hbfffptDhw7R
+      3d3Nr3/9a5qbm3E4HAwMDNDQ0MD169c5evSoMQIYrC26qlDRTCRic9zoPcvVwQlSySTz4SHe
+      ff8YBWXtHZLMIQc7tu8gFApRKBS4evUqHo+HbDaLoihEo1GGh4cJhUL4/X4aGxuRJIlIJGKM
+      AAZrSyEZYWo+iSRmaK62E45GMfnsZJQ8Qj5HRlWxSmvb7ZRUic6uTsS8iMlkIhQKoSgKpVKJ
+      cDhMa2sriUSC48ePo2kagUAAq9VKpVIxFMBgbTG7qjn6chNauUSpmMdXY8JuNaErZarq2vCt
+      Q8Rrk9eK7DDz+qEvtkF37txJMplE13XeeOONO8r09PRQLpcNBTBYW2TzTTNxiwWz5TaTcYsF
+      600r5Y3KyuVwOJb5A3wZs9m8sgI0vN5CIHB0vdq1vjxA6DwDg5VHgOQkwuSpFU898QgidBx5
+      3K0weEowpkAGj4U/Ovx93tx59L6vXy047s7G7odqx6oKoOv6Qzl/rzTPuyVH13V0Ft0RgWV/
+      G47mm4MX2vcgP4A59C2f4Acpcz+sKu3idJr9DR7KioYoCoiAho4oCCz6+0NZ1RAREEWB2UyJ
+      GpeFS9Mp9tS5ieUrTCYLWGWRrpATSRQoVFT+/vocW0MOIpkSqqazq9ZFpqSwp86zSosMDNaO
+      +1KnTEnh1/3zOEwSAbuZ8WSeZq8NURDQdJ1wsogO1LosCAJcnkkTK5TRdZ2pdIlal4VUUeF/
+      /GCQ7dUufri7jqDDhKbpNLit7KhxcWE6hd1kLGCfdBSlgijKiOL9jdSqqiJJT67v9KoK0Def
+      RdV1dB0ssoiiaXSHnIRTRd7aVs14Ik+b306+opIrq2TLCpquIwkC3FQQkyQgiQK7at10Vzkp
+      q9qiY3lZoaLqTPQXONDgIV00Iic/2ejcuHweb2M3dQEXgsDNeDsl9OwCSUuIOrcZRVFRlQqy
+      xcbI0CA1VVU43C7KZRWn48lyNV1VAf5w76JT+HONy53K99YvTlVafPeOjXN7udv//lZ39f23
+      0uDJQFOpaWpHF3RisRg2s0yuUCCTV3CbKmQKSebSeTSLF72YQrR5CQQCKKpKIZtiNpqmvaNt
+      MdCYpqEoD/bA03X9gcrcz/XGLpDB/SPKVFUtf3C5fVB78++aZWdCdxT3+hdD5t/azXmQBe2t
+      DDEPMp1SFGXVOu4dG1TXOTYaw2WW8dpMDMVy7Klz0zuT5oUmH16rzLlwElkUqfdY6Z1O8WpH
+      gFPjCdr8dlr9dlRN59REgq1BO70zGXbVurg0k8Yqi7zWHliXXR/RXoXoaV5zuXetz1lNW32A
+      fLG8ZjKlZ/yF3sOsCx4kP9j91nFPBRCARo+N4ViOzionmZLC5Zk0TrNM70yaIy0+ZjMlyqpO
+      vFBmb72H9wYXkEUBt2VR9OBCjkimiCiA3SQyEsvzekeAq7OZB/oyD8KfX2vls76NXnitbRzU
+      xY3iZ5OHeeitV5l7KoCqg8MsoekwmShQ47KwrdrJSCxPPF/BJAocbvFzYiyOIAiUVA1JFPDZ
+      TJybSvLGlhCXplNMpYscavYRz1coVFSuz2XZVuVctz3/aDK3FKH5aUXTnl0FACgkIlzqG6em
+      qZnE5DiKJLN9936clptPeb3ChbPnEZx+9u3oIjrWz1CsSHtDLcNjQ5htPvbt7lnRnn9ueoSF
+      nEx9UKK/bxqrL8DubR13XJdJzK/mD6DTH81S77GSLStcmk4zlykznS7SVeXkSiTDWDzPtmon
+      ++rcDC/keGNLEFXT6Qw6OD+V5A/21POHe+qxSCLRXJm9dR5qXRbsRljBTU08lmXPC/tR8xkU
+      Rbm5LrjtgViK42nYjuumQpRVHVnU0VQVVdMQELjb47O6vhG7SULTVDRNu+uD1uWruvcIIIsi
+      r7YH7zje7LOh6ToBuwnxNuGvdSxe+2KrH13Xl3aI6tyLnkGvd1iWfV5vHFYz+VKZuxkfCoLA
+      nq31jEfi1Ic8ZAtlJmcTmE3SUpI7g/XB7TJz+bNeAlXViJKMJuhUygrcst40e4hNXkK0u0ml
+      UlgcDkzJDKnMYsh0pVxCZeUpTCQ8zvBwhK1d9ciymXKpuMJVkI7NPvwukLjK9EUQBNYxEct9
+      0VDlZWR6AYfVTEdjiOGpKKqmY5JENF3H77Kj3Oah5LSZaan1o6gqE7OJx9jyZx9nVRMHA/VI
+      koTaWAcISLc7yohWDjx/EAQRARBcLjzBOmRZQlGaEUWJu80hqmrbOFrTiiRJ1NWoiHdZDDt9
+      oc2xDdrTVsvMQoqe1trFYVaHaDLLYHie3Vvqaa31ky9VSGTyBDwOsvlnO53RkxK8UpAAABsb
+      SURBVIAgCEtblLK8ss2+9CXPMdPNXaB72fgDSLK8pBz32jkSRenZ9gkuVRSO7GojmS3QXh/g
+      6sgMxVKFTKHIeCSO12nH57KTzBYIeZ101AcZn4kbyaw3Ec/0CDAeiTMeWcwKeGNsMT/Zhf7w
+      0vlSReHji4tJ1Uamv8jnlVvD/XyDJ5tnegQwMFiNZ3oEaKjysq21mqHwAi21Ps5em+BAdxMm
+      WeLji4PUBT30tNawkMoRTWRpqvExn8hiMUlcG53FaTNzcFsziUwep81CyOfkVyeu8eahbbx7
+      tu+ZT326GXimFWAmmsJlt5DKFhifWdxnNpskZEkEBKajKexWM7FUjta6AKWywsjUAp3NizYr
+      2UKZwfA8Jkni6kiEntYaWmoDpLKFVXfBDJ4Onukp0I6OWtx2C6Ig0FLnp7HKiyAICIKA12lF
+      EgVcNguqqlHlc9LVXE1jtZeWWj9ep436kIfulhoK5Qrt9UFGZmIEvA7a6gMEvc7H/fUM1oBn
+      egQYmVrAZbdSLCv0jc9RrqhMR1NIoki130UyW+DaaISyovLOmT7MJgmH1czlwWlCPieRhRTX
+      RiIUShXi6TzlisrZa+Nc7A+jKMb051ngmVaAbKFMtlC++ffyrc1ktgBA+baOXK6olCsFoACx
+      L2R8mYrR+Z8ZnukpkIHBahgK8JSQjE6TKemgKfTdGEAFKvkU0UT2rmUKqQh9I5Glz+VEmGtj
+      UQA0rcDpY8c4ceos6cKD2T1d7+3ly68KR3p7Sd0r4pteIRxebIuuFpmaiT5QnevFygogiCBK
+      T+c/SUYSBSRRfKr/fZlyfJILfVPkkzP84mc/ZTZVZvTaReayCrq+6F6o3Yydo2kaqqpSLqSY
+      j2VA11FVlVImTiS+qDBqZYHpmMiBXV28+3c/ZSFXWXIh1DT9ZhkFRVHRdZ344GccuxpGVTVm
+      p6YoqyqKqi6Fv1mYmqKgaUvHNG3RxkrXtJvXyFz97FMSRYVLxz+gINu/qO9mu1VVXapP0zR0
+      XUNV1z6a9O2suAawvfKH2F75w3WteD35s8fdgHXA39xN4v3PmFZNHP3Kq4yNTVGYT/PcLifv
+      v/13yG4/C4kSb32th7/+q49p37GVXVv9AEwPf865G2HcegK1/vCSTEEQsTq9vHq4m8+vT2BN
+      95MTbKRzCm+9eYRTJ86hVHKY/Fswzw3Ql5yh2iFSysY5ffIk8fFJjn7vd6l1WYES50+dRo9O
+      07r7JW6cO8F3f//3OPfe27QffpM6t4XXXj/Cux9+gCC52Buycfy9t1FMTtJF+Pbrz3Pm7DlK
+      +TSWmu0Is33EEWhu28GuzvXz7jOmQE8JssWFXskyFsmwd+924jMj5BQTLhYoWhp47ZVXabeX
+      mSnpBBo6eP3oIcw3f92BwTFee/MbHD6wG2mFcCaaqiJKZa73TSAC0elx4qksuUIRJCtT4VG6
+      urvp2XuQ7rZ6LE4/R15+mT1bGsiUb02fLBx88Qhvfv1rhEeG2NdVxaWrQ8yXrNS6F83gLZ56
+      1PkJ9r98BF0p0z88hgDEJ4eI5krk80UEs8TkyCRoZXYfen1dOz8YCvD0IEjUWYuM5i3YrW60
+      +RuI/gYEsx81FWZqZprRZIUqi4DLtfwdhc9t4fqNIcbGJ5Z5muUyKSJT45y8HGZPzxaaWurp
+      6NzGy68cpTI3jOBrobE2hCCAZLUSn5kimb7LmkPUiEbm+PzCWaqattC24yCXP/w5jZ07ljmu
+      WJ0+HBYRQZJpamxia3cPL73yCpX5UXDX0VQXWnzJKNlw2tZ/k1LQNypWtcEjU8zESZZlagJu
+      EvMzCI4gXoeZciHD0OgkDa1bcFl00lkFr8eBUi6QL4PLbmJ8ZBjZ5sTlDeJ1WtG1Ev3XB9Ek
+      M60d7djNMkopz/DIGA5/NQ3VfsaHBzC7q7GbBbxeD+GxYSRnEKdJwOnzUc6kwOrEZpLIZZJM
+      T01j8YRorqtC11R++fOf89Xv/R52+QsVSMRiuPx+ZEGgUswyNDKON1RPbdDN+OgwZrcfm8mC
+      LKjY3V7k+wzA9bAYCmCwLoz29VK0VLGtrf5xN+WeGApgsKkx1gAGmxpDAQw2NYYCbFJuJZG+
+      nQeN1fmgPInyDQXYpKy09Fvv5eCTKN9QAINNjaEABpsaQwEMNjWGAhhsap5pjzADg5XQdJ14
+      qkB/eMFQAINnG13XyRcrxDNFJueSjM8mGQzHiSZzNFd7DFOIzcpK6YMqlcqqcTcfhbWSr6oa
+      8UwBURSwW0yUFZWByRijM3Fu+vKQL5aJZ4osJHMUygqyJFIXcNFW56OzMUBbvQ+H1XynAoxe
+      P8/AdAqrxcqe/QfxOsz3bEwqkcDl8yEW5/j4YpRXD2+/7WyZjz8+x6uvvnjX8onpITKWepr8
+      Mh+8+yGHvvomcj7KREInN3ODWF4DXWT/oSN47ev342w2njQF0HWdUlklnS+RzpeYiWaIpvK4
+      HRYcFhOSJFBRNKaiac73z1CqKEiiQFnRkAQBn9vG9pYgsiwjCGC3mvC7bIS8drxOG267GUm6
+      c8l7xxRoZmqS7Qe+RUBM8Kt33+d3vvdNkrOTRFIVtnW2oxTSDAyP4g7WU+OR+dlPfsL2wy/S
+      0+IlnUpy7fMr1DRvIeixAzrpZIK+a5/jr2vFbapQkZy47Wai0XmCwSqsVoETl/sI7a1maLCf
+      2u0vYIn2UQxuZ2J6jjfe+gFSaZS3P7jA77z1wpr/KAYbj6bpzMaz9E0sMBBeILKQIZYuoGo6
+      NrOM1SIT8jqoDTgZmc6RuZlz2iRJhLx2/uk39tBS60UAShUVSRRx2kwoivLACnzXNYDdW41L
+      LhIN93P6Rox9bTY+OXOVvR1BgjX19J3/FPH5NwgGgzQ3N2E15ZgKT/HC/lf55KMP+N3vvQVA
+      JpXAG3qO0x+/y6HD+zl1+QbffXUbx09/zve//TpWbxPl1DvMjGU4+OobTI+PYcom2Lvdx0A+
+      xYXPzpCaD7Nt3+uPdNMNHg+arjMfzzEyE2cwHGNiLsVUNI3VLLOlIcD21hAv7WqmyuvAbjVh
+      kkVMknTfibhtlkcbse6xCNZRFJ3Y1DjZPAyHCxR1K+PD88xlNaKzURpKOg6HA6/fh6mQp7lt
+      C9VVVVhvy/juDdZQW11NY7UbxVKDOf8ZZ06l6TlwBEEAJBM2XeHGdIbXv36I93/zDkXNhMci
+      IluddPfsoFjr5srQINuann+kL2uw/ui6TipXYmQ6zqWhWa4MzyIKAk3VHtpqvXz3xS6aqj04
+      bGbM8uNPk3WHAuiVImdOHuOamKemcz8djRauT58D3UVTcxOxofMIZt/SfMplh4/f+5hD+9tY
+      KWlTZmGajz58n0ROZ6fXypGD3fzLn37G/3DUdfMKga11Zn5xXeNbkhlnYYZo4CACi2E/Lpw/
+      h17K4Kjauo63weB+0HWdiqIxGkmgqBq6ppMtlsnky0STeUZn4ozPpgBoqfHS3Rzkv/v9w9SH
+      XIiC8FBTlPVmY3eBdJ35sV6uzNv5yvNdG1atwZ08yCJY13VKFZWPL47xDyf78bttWEyLZZ12
+      M267mZDXQUuNl4aQmyqfY8U6n8Rdpo19D6AUmclaeeVg54ZWa/DgaLqOomiE51Oc+HySz/qm
+      qQ+6+NMfHqa93v+4m7dmGO8BNikrjQDZfJGZWI4LAzMMhmMsJPMIosCLO5t4cWcTtQHXXaTd
+      H8YI8LBoCoWyhs1673cSBo/Gz4/3c3V0nn2dtXzvpW7qQy78Ltu6JTR/ErhjBIhcv8CCp5Ud
+      DYG1ry07y/tX5vjq4V0PVi43xq/O5fjWq9tXv9bgvlhpBCgUS1gs5nVL/vFUjAClXIastcLk
+      8A3m41kS6TwvvPgiWmaWC1cGCDV20FFj47OLV7G4Q+zfs52rF09TKCoIFgd6KYvZW8e+nnau
+      Xz5PNK2w97nn8NhMoJaJp74IrDQ+8Dmj0wt07TpIfm6Chq4eyEaZSYNVidM/MkXrtj20uh/9
+      5hisjiyJmy7zzV3NoSdGB/E1bmV7jcjViSQfHTvJoZdeZktTFcc+/pRdzx8hJCa5PBRhaGSS
+      fc8fZvBqL7ufO0J4+Drx8cvMVPw8t6OZU2cv3VlBYZazfTFeOvIc506dQCzHuD4yT//nvYiS
+      wqlLo7z08otcOXcC1Vil3D+6zmjfNbKlEtcuX2I2lmaov4+KptPfd52Ksr7BZp827roGEGUz
+      XrcTMqbFSL+SGatJApNAWRdxWs1UPC5m0kVsDicWk4zN4cJilpFlmWI2zdjwFFLWgT/QcGcF
+      5RzhyXGOn9Bw+YI0d23l+kdnkASRnR6Rt2fCHD9+Aos7sGjdZHBf5JPzRBcSiM4ZPA2dJOan
+      KCTniSdCjE1EaGnrRBS+iMZ8O7eiSq8XT6L8OxTA6vbisZnRfAFMogB2Dx7NRH1XM+++/yGh
+      uhae39PFe++8iyibePHlHVwtzAFQVVWFAASDQWq6dtI2/QkATsfNfWHZSjE+yUcfFencuY9D
+      22sp6uBwOpCsbqosCqamXYi2EEf2biGW13A47AiyjaBvcw3Nq6HrGpqqUCxrOOzWW0cZHRsj
+      l0kQS3oIyB40BLyhKsb7BgjVVgOL2dN1Xb9jcXsrf9p68STKN7ZBn1Lmx67x0bnrFDULf/jD
+      7yx7khXSCbC5mBoeINjYjqxXKORzmK02nE4XsiQ+cdagj0v+07ENanAHvpommltKhEI+vmxR
+      Y3P7ANjS3XPziBWX69H28J9VDJ/gp5RiNsnc7BSRaBpjCH94DAV4CilmFzj24SfEMsXH3ZSn
+      nidmCqTrOhVNQ9HUpQWaSZSQRfGZfhP5MFidAZ47fJis5KEQnzNGgEfgsSuAoqqMJmJcnA4z
+      kUyQLZWpaCqyKOK2WKlze+gKVbGzpg6L/Nib+4Sgcu3iecIlE1s7txnD+CPw2HaBdF3n+vws
+      x0aHCaeSq17vs9l4qaWdg41NyOLjd6R43ORiYX7y03cItWzhrTdfeWAlMHaBFnksj9SiUuHd
+      wX7OTo7f9/CdKBT4Zd81+qPzfK9nJ16bbV3b+KRTKZXx+t3k8wVjCvQIbPjoWVQq/O2VXs48
+      QOe/nYGFef7ywlli+dyat+1pwmQ2k85q1Fd7HndTnmo2VAF0Xee3/Tfoi849kpxoLsvfXLlE
+      ofJgGc6fNUq5BWKZ8kqeqAb3yYYqwNXZCOenw2siK5xK8uHwwJrIeurQNSbC0zQ0t3Bg7x5j
+      EfwIbNi9KykK7w31o63hmvtseIJIOr1m8p4WUrMjzOQsvPbay3z+2RnWz7zs2WfDFGBwIcrC
+      Gs/bFU3jwhqNKE8TgiwzP97Pe+99SEEVjUXwI7AhCqDrOlci0+si+8b8LGV1fXNPPWmYbS6C
+      fg82m43qmipjCvQIbMi9K6sqk6nEusiOF/LE8/l1kf2kYnUG2dPdRFVrD5VMDMPF5eHZEAXI
+      VcrkyuV1kz+fy65+0TOErmt4alooRgbwNbTfYQ1qcP9syIuwYqWCoq3fcypbKq2b7CeRUi7G
+      h++foCyI+CxxNFoNJXhINmQEkMX1rUZaZ/lPGlZniJcO78Zk97KltdFYAzwCG3LvzJKMWVq/
+      Z5TTvPniBVndfqRinMnZmLEL9AhsiAI4zGZcFsu6yBYFgWrn5vN2ysxPI/uaiIZHjUXwI7Ah
+      CmCSJBo9vnWR7bfZcVs3l2Gcruu4Qw2Qm6Oqqc2Y/z8CGzZ93FvXsC42K7tr69d1evUkUsrH
+      +fiTT9EEGbVSXjYFUsp5RkfHKasqM1OT5EsVYgsLaDrEYguomjFhup0NU4D2QIB6j3dNZTrM
+      ZvbVN66pzKcBpZwjMhfHbLHgdi0Pm5fN5nBYYPDGNdJFndHRcQauXyadz3Pu7DnKFcNw4nY2
+      1CFmNB7jLy+cRV2jLdGvbe3iaGvHpnOZ1DWVufAIv3z71+ieVv7ZP/7u0jSokEkwFU0TsikU
+      7E2kZ0eR9QLZvEZWFdi3cweytBhE6sv3TVVVpHUcTZ9E+RvqENPq8/N6+1beG+p/ZFmdwSqO
+      NLdtus4PUMzF6Rue4eu/+0fUhrzLhvHZmWkyuQouVwORgYsEGrdgFRUULUrA60MUBWRZWtEj
+      DFj3DC5Pmvx1HQF0XUfXIVsoky2U0XQdq1nmzPQoJyfHHlpui8/PP9l7ENsTlm7nacJwiVxk
+      XUYAXdcplhU+65vm2OVxxiJJ8sUKug4Ws0S1z4nFZ6HsLCGa7gzRdzdEQeBAQxPf6urBtMkW
+      vgbrw5orgK7rTM6l+Iu3L9I3Eb0jrm1ZUcnk4zANDodM01YHoltD1e+yLtB1ZEGj3u3lK1u3
+      sSVYtdZNNtjErKkC6DoMhmP8b39zmoXU6haauZzC6PUs33ppCw3NDgZjUZKFAqqmIesV6jND
+      tKSu0aCnCGYcSPkWlLajSI3PIZisq8o3MFiNNV0DzCdy/OjfHWM6mnmgcnaLzJ/+8Ai7t9SA
+      rlNJTFD59M9QJ06B9iVbf1FGaj6M9eifInoaYRMugtcCYw2wyJq9B9A0nZ9+cv2BOz9AvqTw
+      4cVRNF1Hy8xSfvdPUceO39n5ATQFdew4hd/+t2jZ2TVoucFmZs0UIBLPcvra1EOXvzo6TzSe
+      pnzuL9Dmrq96vTZ3nfLZv0BfSUkMDO6TNVOAz0fmyBUf3ukllSty7UovleEP77tMZfhD9OTm
+      8wk2WDvWTAHGIo/m8qjrMNp/FYqp+y9UTKHOXn2keg02N2umAOnco3tlpTIP7turZYx1gMHD
+      s2YKYDU/+o6qzfrgOwSC1cihavDwrJkCtNf7H1lGR9cOMDvvv4DZiVS/75HrNdi8rJkC7Gqv
+      xmZ5+FHAZTezY89+5NYX77uM3PoSoq/loes0MFgzBagPudjfWffQ5Xtaq6gJerG88F8g+lpX
+      vV70tWJ54V8gSIZBnMHDs2YKIIkiv//adkJe+wOXtZgkXtnTgigKiN4mrN/4M6Ta3SCs0DxB
+      RKrdjfUb/zuit2kNWm6wmVlTUwhdh8vDEf7Pn569710hkyzyuy93852uAMrYGMrsLFqphCAq
+      kLqCqI0jWisIJhOipwG5/RXkjtcQLJvPEX4tMUwhFllzfwBd1+mbWODfvH2RidnkPUN2eKwy
+      3/OVORgbRh0bQ18pwJUActCL7cABXF//JnIwtJbN3bQYCrDIujjE6LpOOlfi2OUJTl6dZGYh
+      Q6msoLP4xPe7bOy0qxy4cYpgdArhPpsgOp24v/89XF95HcFImPdIGAqwyLp7hJUrKvFMgVS2
+      hKbrOKwmbFcvUfzJj6H4cHlubc8dxP/H/xTJyH5+V3RdYy4ygztQQymbwuMPkErEcHv9SKJg
+      KMBN1jUqhCAIWMwytQEXXc1BtrWECAxcofTv//qhOz9A4dxnLPwff46W29x5wu5FPhEhnqsw
+      OjpO39Ve0vkCZ06fNaJCfIkNDStZvHGDxF/9W/Q1yO1V6u8n8R9+jL6OQXefZrRKCV9VAyZR
+      pao6yORAP+7qWiOf2JfYMAXQCgXi/9+/RV/DMOm5Y8cpnD+/ZvKeJWy+amYGLmJxBXD5azFb
+      ZJrrqhFFQwVuZ8NWktnjx1Gm1j5LTOpnv8C6ezfiOsUefVqRzQ72HXx+6XN1dfXS37eWfSst
+      /9Y7TNSTJn9DFEArlci+98G6yK5MTVG8fAX7cwfXRf6ziHZz2qiqy9cDuq7fcWwteRLlb4gC
+      VMYnUGZXNlsWHQ4Emw3RbkNXFJTZObhtXm9qbqYyMYHodoOqrrjwzZ85i+3ggU0ZJOthuFv0
+      tCcxctt6y9+YDDE3bnBHfJSbaKUS1rZWBKsNLZNGdDiRg0GU+bmlTi+0tWFubSF/8dKKMsqj
+      o+iVCsImzBOwlqxn53xS5W/IIrgydQ9fYUVB8vvRFQVBNiE6HKipFJLHQ6mvH13TEZ0OKjMz
+      dxcRjaJvskR5a4GmKuQLRXRNI5mIU1E1cpkUuUIJVSmTSKYfYc6uk8+mSWcLKJUSyVQGXddI
+      xuMo2uK5/CO40IJONp0kmy9RKRVIZXLoukYulwd98VyxvLq/+MasATL3jhRRuNS7aAYhLeqj
+      5PFSjsfRKxXKw8MgCEg+393l6DpqJoPkXdvo0886qXiUcDRDk8/EZLKCPDNNoQSyBGYZ9HKB
+      Ysdeal0P0U1UhfnoAvFYGotNQCkq2D1OKooGsRiFRBrMFvbt3v5wjVdKzC/ESaZymKUKlaJK
+      w5Y2JiYi7NzawNDIBILJwu7tXfcUszF5giv31kQtk0Evl9ELRfRCEWV2dnG7VNfRi0X0QgFl
+      ZgbutcDZuCDXzwy+UDVOmxm7N4BeypLIlnHbYCEeRxEsdG2tJ5N6yBeWkozdIlPd2IjJbGdr
+      Y4jZdJn29k5EJYYn0IzT9ghvhWULNhnqmpqw2Fx01LqpWAIEPA4qapHqmlZsptXXhBuiAKJ7
+      FbdFQcDU0oJgvTPam2A2rx78ShAQN1mWmLVgfmqcifFx4tkimqLQ0NSMAASr6gjYBc5dmaKu
+      +sHN2wH0SpGh0QlisRgWUeXy2Dw9TUEuX/oMu28rufgwJe3hJyBaIcXgRITYQgxRK3EtksdW
+      mGV8fJyFlMZs+AaqtHqf2JD8AMm//U+k/+GXd2+ExYKlqwtdUVCTSfRSCV1RkHw+0DTU2AJ6
+      uXLXl2ii00ndv/qXiHZDCQwejA0ZASxd956HAchVIfRSEXNzE7b9+zA3NSFaLYgOB7aDB9GV
+      u0+jTC3NCFbjRZjBg7Mhi2DLlg5ErxctmVzxvK5paDeN4/RyGTUWW9zZKZcQrVZKyQSi24WW
+      XDlmkP3AAYRNlivYYG3YEAUQHQ4chw+R+c1vV76gUiF/4uSKp1Z7ryf5fMZbYIOHZsMem66v
+      v7n6Yvhh5L75NWP786lHZ3JsDKWcIxxZ2NCaN0wB5EAA7w9/AGs4VTF3dOD86lfWTJ7B40Kg
+      EJvgH95+j6Kqce7Up0yMj3Ps42PEknF6L10mnl07K+Lb2dCJs+Oll3B97Y01kSUF/AT+xT9H
+      XGHr1ODpY+vu/eQKKuZ4P1fHIgyc/Zjk3CDHz57n+kQWn3N9zFw21LFWEEW8P/x9dFUl+/4H
+      D/3ySq4KEfxv/mtMtTVr3EKDx4UgW9m/dwe1LSGaZgpUeapJFcv4apsxm73r5sizoXmCb6Fr
+      GtkPPyL105+hZbP3X1AQsO3dg+8/+yfIweD6NdBg0/BYFOAWSixG5rfvkPv0xL3thWQZS3sb
+      7re+jXXnTiMihMGa8VgVABadGLRMhuLVqxSvXkNZWEAvFBAsVuSqEKamJmw7dyDX1iIYqVEN
+      1pjHrgAGBo8T4/WpwabGUACDTY2hAAabmv8fmG6uZ3UC0/4AAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
